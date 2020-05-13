@@ -1,4 +1,4 @@
-# [Attentive Normalization for Conditional Image Generation](https://arxiv.org/pdf/2004.03828.pdf) [[Slides](./media/213-talk.pdf)] [[Video](https://drive.google.com/open?id=12DnbF4DCEyKU8adZ67G9gWHhL9lrqh5c)][[Supp](./media/00213-supp.pdf)]
+# [Attentive Normalization for Conditional Image Generation](https://arxiv.org/pdf/2004.03828.pdf) [[Supp](./media/00213-supp.pdf)]
 by [Yi Wang](https://shepnerd.github.io/), [Ying-Cong Chen](https://yingcong.github.io/), [Xiangyu Zhang](), [Jian Sun](http://www.jiansun.org/), [Jiaya Jia](http://jiaya.me/). **The code will be released**.
 
 ## Introduction
