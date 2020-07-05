@@ -41,7 +41,7 @@ In common practice, Attentive Normalization is placed between the convolutional 
 
 ## Implementation
 
-The TensorFlow implementation of our attentive normalization is given in (inpaint_attnorm)[https://github.com/shepnerd/AttenNorm/blob/466d727d27fc17dbccd1a5e2090fe91491a26483/inpaint-attnorm/net/network.py#L8].
+The TensorFlow implementation of our attentive normalization is given in [inpaint_attnorm](https://github.com/shepnerd/AttenNorm/blob/466d727d27fc17dbccd1a5e2090fe91491a26483/inpaint-attnorm/net/network.py#L8).
 <!--
 ### Semantic Inpainting
 -->
