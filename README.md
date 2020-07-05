@@ -1,8 +1,8 @@
 # [Attentive Normalization for Conditional Image Generation](https://arxiv.org/pdf/2004.03828.pdf) [[Supp](./media/00213-supp.pdf)]
-by [Yi Wang](https://shepnerd.github.io/), [Ying-Cong Chen](https://yingcong.github.io/), [Xiangyu Zhang](), [Jian Sun](http://www.jiansun.org/), [Jiaya Jia](http://jiaya.me/). **The code will be released**.
+by [Yi Wang](https://shepnerd.github.io/), [Ying-Cong Chen](https://yingcong.github.io/), [Xiangyu Zhang](), [Jian Sun](http://www.jiansun.org/), [Jiaya Jia](http://jiaya.me/). **The code will be updated**.
 
 ## Introduction
-This repository gives the PyTorch implementation of the method in CVPR 2020 paper, '[Attentive Normalization for Conditional Image Generation](https://arxiv.org/pdf/2004.03828.pdf)'. This paper studies conducting visual long-range dependency modeling in an normalization manner, verified both in class-conditional image generation and image inpainting tasks. 
+This repository gives the implementation of our method in CVPR 2020 paper, '[Attentive Normalization for Conditional Image Generation](https://arxiv.org/pdf/2004.03828.pdf)'. This paper studies conducting visual long-range dependency modeling in an normalization manner, verified both in class-conditional image generation and image inpainting tasks. 
 
 ## Framework
 We __normalize__ the input feature maps __spatially__ according to the __semantic layouts__ predicted from them. It improves the distant relationship in the input as well as preserving semantics spatially.
@@ -39,6 +39,13 @@ This module can be applied to the current GAN-based conditional image generation
 
 In common practice, Attentive Normalization is placed between the convolutional layer and the activation layer. In the testing phase, we remove the randomness in AttenNorm by switching off its self-sampling branch. Thus, the generation procedure is deterministic only affected by the input.
 
+## Implementation
+
+The TensorFlow implementation of our attentive normalization is given in (inpaint_attnorm)[https://github.com/shepnerd/AttenNorm/blob/466d727d27fc17dbccd1a5e2090fe91491a26483/inpaint-attnorm/net/network.py#L8].
+<!--
+### Semantic Inpainting
+-->
+
 <!--
 ## Prerequisites
 - Python3.5 (or higher)
@@ -71,9 +78,10 @@ If our method is useful for your research, please consider citing:
     }
 
 <!--
-## Acknowledgments
 Our code is built upon [Self-Attention-GAN](https://github.com/heykeetae/Self-Attention-GAN), [SPADE](https://github.com/NVlabs/SPADE), and [Sync-BN](https://github.com/vacancy/Synchronized-BatchNorm-PyTorch).
 -->
+## Acknowledgments
+Our TensorFlow code is built upon [DeepFill (v1)](https://github.com/JiahuiYu/generative_inpainting).
 
 ### Contact
 Please send email to yiwang@cse.cuhk.edu.hk.
